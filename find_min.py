@@ -22,6 +22,13 @@ def get_min_with_many_arguments(*args):
     """
         return smallest number among args
     """
+    minValue = args[0]
+
+    for i in args:
+        if i < minValue:
+            minValue = i
+
+    return minValue
 
 
 def get_min_with_one_or_more_arguments(first, *args):
