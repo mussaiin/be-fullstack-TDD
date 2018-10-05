@@ -4,7 +4,8 @@ import find_max as f
 
 class FindMaxTest(TestCase):
     def test_get_max(self):
-        pass
+        result = f.get_max(1, 34)
+        self.assertEqual(result, 34)
 
     def test_get_max_without_arguments(self):
         pass
