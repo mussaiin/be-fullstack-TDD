@@ -9,6 +9,7 @@ def get_min_without_arguments():
     """
         raise TypeError exception with message
     """
+    raise TypeError('there is no arguments in your function')
 
 
 def get_min_with_one_argument(x):
