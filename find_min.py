@@ -1,9 +1,8 @@
-
-
 def get_min(a, b):
     """
         return min number among a and b
     """
+    return b if a > b else a
 
 
 def get_min_without_arguments():

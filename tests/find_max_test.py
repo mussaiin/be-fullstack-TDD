@@ -1,5 +1,6 @@
 from unittest import TestCase
 
+import find_max as f
 
 class FindMaxTest(TestCase):
     def test_get_max(self):
