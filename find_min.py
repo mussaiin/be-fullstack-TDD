@@ -47,7 +47,13 @@ def get_min_bounded(*args, low, high):
     """
         return smallest number among args bounded by low & high
     """
+    minValue = high
 
+    for i in args:
+        if i > low and i < high and i < minValue:
+                    minValue = i
+
+    return minValue
 
 def make_min(*, low, high):
     """
