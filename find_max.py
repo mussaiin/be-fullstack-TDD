@@ -21,8 +21,12 @@ def get_max_with_many_arguments(*args):
 
 
 def get_max_with_one_or_more_arguments(first, *args):
-    pass
+    maxValue = first
+    for i in args:
+        if i > maxValue:
+            maxValue = i
 
+    return maxValue
 
 def get_max_bounded(*args, low, high):
     pass
