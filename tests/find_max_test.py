@@ -33,4 +33,9 @@ class FindMaxTest(TestCase):
         self.assertEqual(45, result)
 
     def test_make_max(self):
-        pass
+        bounded_max = f.make_max(low=0, high=255)
+        self.assertEqual(True, callable(bounded_max))
+
+        if callable(bounded_max):
+            result = bounded_max(-5, 13, 300)
+            self.assertEqual(13, result)
