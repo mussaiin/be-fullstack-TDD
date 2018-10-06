@@ -19,7 +19,10 @@ class FindMaxTest(TestCase):
         self.assertEqual(4, result)
 
     def test_get_max_with_one_or_more_arguments(self):
-        pass
+        first = 124
+        array = [1123, 1421, 12]
+        result = f.get_max_with_one_or_more_arguments(first, *array)
+        self.assertEqual(1421, result)
 
     def test_get_max_bounded(self):
         pass
