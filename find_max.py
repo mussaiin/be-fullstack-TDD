@@ -11,7 +11,13 @@ def get_max_with_one_argument(a):
 
 
 def get_max_with_many_arguments(*args):
-    pass
+    maxValue = args[0]
+
+    for i in args:
+        if i > maxValue:
+            maxValue = i
+
+    return maxValue
 
 
 def get_max_with_one_or_more_arguments(first, *args):
