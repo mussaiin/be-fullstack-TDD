@@ -11,7 +11,8 @@ class FindMaxTest(TestCase):
         self.assertRaises(TypeError, f.get_max_without_arguments)
 
     def test_get_max_with_one_argument(self):
-        pass
+        result = f.get_max_with_one_argument(123)
+        self.assertEqual(result, 123)
 
     def test_get_max_with_many_arguments(self):
         pass
