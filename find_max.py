@@ -29,7 +29,13 @@ def get_max_with_one_or_more_arguments(first, *args):
     return maxValue
 
 def get_max_bounded(*args, low, high):
-    pass
+    maxValue = low
+
+    for i in args:
+        if i > low and i < high and i > maxValue:
+            maxValue = i
+
+    return maxValue
 
 
 def make_max(*, low, high):
