@@ -40,6 +40,11 @@ def get_max_bounded(*args, low, high):
 
 def make_max(*, low, high):
     def inner(first, *args):
-        pass
+
+        maxValue = low
+        for i in (first,) + args:
+            if i > maxValue and low < i < high:
+                maxValue = i
+        return maxValue
 
     return inner
