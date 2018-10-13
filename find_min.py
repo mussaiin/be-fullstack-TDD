@@ -57,7 +57,7 @@ def get_min_bounded(*args, low, high):
 
 def make_min(*, low, high):
     """
-        return inner function object which takes at last one argument
+        return inner function object which takes at least one argument
         and return smallest number amount it's arguments, but if the
         smallest number is lower than the 'low' which given as required
         argument the inner function has to return it.
